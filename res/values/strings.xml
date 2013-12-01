@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ClimbingGuide</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="sector">Sector</string>
+    <string name="update">Update</string> 
+    <string name="Update">Update</string> 
+    <string name="create">Create</string> 
+    <string name="search">Search</string> 
+    <string name="lukas">LUKAS</string> 
+    <string name="newRoute">Vytvorit novu cestu</string>
+    <string name="newArea">Vytvorit novu oblast</string>
+    <string name="newSector">Vytvorit novy sektor</string>
+    <string name="routeName">Meno cesty:</string>
+    <string name="routeSector">Umiestnenie v sektore:</string>
+    <string name="routeDiff">Obtiaznost cesty:</string>
+    <string name="routeLength">Dlzka cesty (v metroch):</string>
+    <string name="routeBolts">Pocet isteni v ceste:</string>
+    <string name="send">Odoslat</string>    
+    
+</resources>
