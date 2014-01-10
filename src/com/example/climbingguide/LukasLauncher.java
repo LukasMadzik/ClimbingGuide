@@ -3,6 +3,7 @@ package com.example.climbingguide;
 import org.cimbingguide.gui.CreateArea;
 import org.cimbingguide.gui.CreateRoute;
 import org.cimbingguide.gui.CreateSector;
+import org.cimbingguide.gui.GetFromURL;
 import org.climbingguide.update.Update;
 
 import android.app.Activity;
@@ -26,10 +27,12 @@ public class LukasLauncher extends Activity {
 		Button b1 = (Button) findViewById(R.id.button1);
 		Button b2 = (Button) findViewById(R.id.button2);
 		Button b3 = (Button) findViewById(R.id.button3);
+		Button b4 = (Button) findViewById(R.id.button4);
 		
 		b1.setOnClickListener(onClickListener);
 		b2.setOnClickListener(onClickListener);
 		b3.setOnClickListener(onClickListener);
+		b4.setOnClickListener(onClickListener);
 		
 	}
 	
@@ -50,6 +53,10 @@ public class LukasLauncher extends Activity {
 	             case R.id.button3:
 	            	 Intent intent3 = new Intent(LukasLauncher.this,CreateArea.class);
 	            	 startActivity(intent3);
+	             break;
+	             case R.id.button4:
+	            	 Intent intent4 = new Intent(LukasLauncher.this,GetFromURL.class);
+	            	 startActivity(intent4);
 	             break;
 	         }
 

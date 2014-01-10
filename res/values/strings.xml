@@ -18,6 +18,9 @@
     <string name="routeDiff">Obtiaznost cesty:</string>
     <string name="routeLength">Dlzka cesty (v metroch):</string>
     <string name="routeBolts">Pocet isteni v ceste:</string>
-    <string name="send">Odoslat</string>    
+    <string name="send">Odoslat</string>
+    <string name="sectorName">Nazov sektora</string>
+    <string name="sectorArea">Umiestnenie v oblasti</string>
+    <string name="areaName">Nazov oblasti</string>    
     
 </resources>
