@@ -41,23 +41,14 @@ public class GetFromURL extends Activity{
 		    ThreadPolicy.Builder().permitAll().build();
 		    StrictMode.setThreadPolicy(policy); 
 		    setContentView(R.layout.get_from_url);
-		    String readTwitterFeed = readTwitterFeed();
+		    String read = read();
 		    Button b1 = (Button) findViewById(R.id.button1);
 			
 			b1.setOnClickListener(onClickListener);
-//		    try {
-//		      JSONArray jsonArray = new JSONArray(readTwitterFeed);
-//		      Log.i(GetFromURL.class.getName(), "Number of entries " + jsonArray.length());
-//		      for (int i = 0; i < jsonArray.length(); i++) {
-//		        JSONObject jsonObject = jsonArray.getJSONObject(i);
-//		        Log.i(GetFromURL.class.getName(), jsonObject.getString("text"));
-//		      }
-//		    } catch (Exception e) {
-//		      e.printStackTrace();
-//		    }
+
 		  }
 
-		  public String readTwitterFeed() {
+		  public String read() {
 			StringBuilder builder = new StringBuilder();
 			HttpClient client = new DefaultHttpClient();
 			HttpGet httpGet = new HttpGet("http://climbingguide.madzik.sk/routes.php");
@@ -91,7 +82,7 @@ public class GetFromURL extends Activity{
 			     public void onClick(final View v) {
 					 TextView v1 = (TextView)findViewById(R.id.textView1);
 				 	
-					 v1.setText(readTwitterFeed());
+					 v1.setText(read());
 					
 					 
 			     }
